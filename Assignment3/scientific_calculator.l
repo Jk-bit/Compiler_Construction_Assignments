@@ -6,23 +6,32 @@
 
 
 %%
+[0-9]+[.][0-9]+			{
+							yylval.dval = atof(yytext);
+							return FLOAT;
+						}
 
-[0-9]+		{
-				yylval = atoi(yytext);
-				return INTEGER;
-			}
+[0-9]+					{
+							yylval.dval = atoi(yytext);
+							return FLOAT;
+						}
 
-[-+()/*\n]	{
-				return *yytext;
-			}
+[a-z]					{
+							yylval.sym_index = *yytext - 'a';
+							return NAME;
+						}
 
-[ \t]+		;
 
-.			yyerror("Inavlid character");
+[-+=()/*\n]				{
+							return *yytext;
+						}
+
+[ \t]+					;
+
+.						yyerror("Inavlid character");
 
 %%
 
 int yywrap(void){
 	return 1;
 }
-

@@ -17,8 +17,11 @@
 			- addition
 			- subtraction
 			- multiplication
-			- division
+			- division also division by zero operation
 			- expression in parenthesis
+			- can handle unary minus operator
+			- can have single length smallcase variables	
+			- supports real values
 		- Does take into consideration the priority of the operators.
 		- Interpreted calculator like bc(ignore the fact of very long long numbers).
 

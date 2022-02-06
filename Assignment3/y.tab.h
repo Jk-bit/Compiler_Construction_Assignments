@@ -45,15 +45,30 @@ extern int yydebug;
 # define YYTOKENTYPE
   enum yytokentype
   {
-    INTEGER = 258
+    UMINUS = 258,
+    FLOAT = 259,
+    NAME = 260
   };
 #endif
 /* Tokens.  */
-#define INTEGER 258
+#define UMINUS 258
+#define FLOAT 259
+#define NAME 260
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
-typedef int YYSTYPE;
+
+union YYSTYPE
+{
+#line 14 "scientific_calculator.y" /* yacc.c:1909  */
+
+	double dval;
+	int sym_index;
+
+#line 69 "y.tab.h" /* yacc.c:1909  */
+};
+
+typedef union YYSTYPE YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define YYSTYPE_IS_DECLARED 1
 #endif
