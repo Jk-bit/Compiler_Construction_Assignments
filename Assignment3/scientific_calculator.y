@@ -4,6 +4,7 @@
 
 %{
 	#include <stdio.h>
+	#include <math.h>
 	int yylex(void);
 	void yyerror(char *);
 	#include "y.tab.h"
@@ -16,7 +17,7 @@
 	int sym_index;
 }
 
-%token <dval> FLOAT
+%token <dval> FLOAT SIN COS TAN COSINE SEC COT LOG SQRT ASIN ACOS ATAN 
 %token <sym_index>  NAME
 
 %type <dval> expr
@@ -41,6 +42,7 @@
 													}
 												}
 				| NAME							{ printf("%g\n", sym_table[$1]); }
+				;
 
 
 	expr :
@@ -55,8 +57,16 @@
 												$$ = $1 / $3;
 											}
 				| '(' expr ')'				{ $$ = $2; }
-				| '-' expr %prec UMINUS	{ $$ = -$2; }					
+				| '-' expr %prec UMINUS		{ $$ = -$2; }					
 				| FLOAT
+				| SIN'(' expr ')'			{ $$ = sin($3); }
+				| COS'(' expr ')'			{ $$ = cos($3); }
+				| TAN'(' expr ')'			{ $$ = tan($3); }
+				| SQRT'(' expr ')'			{ $$ = sqrt($3); }
+				| LOG'(' expr ')'			{ $$ = sqrt($3); }
+				| ASIN'(' expr ')'			{ $$ = asin($3); }
+				| ACOS'(' expr ')'			{ $$ = acos($3); }
+				| ATAN'(' expr ')'			{ $$ = atan($3); }
 				;
 
 %%

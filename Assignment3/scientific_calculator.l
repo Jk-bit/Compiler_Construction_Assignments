@@ -22,13 +22,24 @@
 						}
 
 
-[-+=()/*\n]				{
+[-+=()/*%\n]				{
 							return *yytext;
 						}
 
 [ \t]+					;
 
 .						yyerror("Inavlid character");
+
+sin						{ return SIN; }
+cos						{ return COS; }
+tan						{ return TAN; }
+log						{ return LOG; }
+sqrt					{ return SQRT; }
+asin					{ return ASIN; }
+acos					{ return ACOS; }
+atan					{ return ATAN; }
+
+
 
 %%
 

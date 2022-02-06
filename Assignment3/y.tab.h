@@ -47,25 +47,41 @@ extern int yydebug;
   {
     UMINUS = 258,
     FLOAT = 259,
-    NAME = 260
+    SIN = 260,
+    COS = 261,
+    TAN = 262,
+    LOG = 263,
+    SQRT = 264,
+    ASIN = 265,
+    ACOS = 266,
+    ATAN = 267,
+    NAME = 268
   };
 #endif
 /* Tokens.  */
 #define UMINUS 258
 #define FLOAT 259
-#define NAME 260
+#define SIN 260
+#define COS 261
+#define TAN 262
+#define LOG 263
+#define SQRT 264
+#define ASIN 265
+#define ACOS 266
+#define ATAN 267
+#define NAME 268
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 
 union YYSTYPE
 {
-#line 14 "scientific_calculator.y" /* yacc.c:1909  */
+#line 15 "scientific_calculator.y" /* yacc.c:1909  */
 
 	double dval;
 	int sym_index;
 
-#line 69 "y.tab.h" /* yacc.c:1909  */
+#line 85 "y.tab.h" /* yacc.c:1909  */
 };
 
 typedef union YYSTYPE YYSTYPE;

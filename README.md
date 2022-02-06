@@ -22,6 +22,7 @@
 			- can handle unary minus operator
 			- can have single length smallcase variables	
 			- supports real values
+			- supports trignometric functions and inverse trignometric functions(sin, cos, tan)
 		- Does take into consideration the priority of the operators.
 		- Interpreted calculator like bc(ignore the fact of very long long numbers).
 
