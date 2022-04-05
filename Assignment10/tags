@@ -1,0 +1,54 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+MAX	stack.h	5;"	d
+START_SYMBOl	main.c	/^char START_SYMBOl;$/;"	v
+Stack	stack.h	/^struct Stack{$/;"	s
+array	stack.h	/^    char array[MAX];$/;"	m	struct:Stack
+cal_length	main.c	/^int cal_length(char* input_string){$/;"	f
+calculate_firsts	main.c	/^void calculate_firsts(){$/;"	f
+calculate_follows	main.c	/^void calculate_follows(){$/;"	f
+capacity	stack.h	/^    int capacity;$/;"	m	struct:Stack
+contains_epsilon_in_first	main.c	/^int contains_epsilon_in_first(char ch){$/;"	f
+containts	main.c	/^int containts(char *array,char ch, int count){$/;"	f
+count_non_terminals	main.c	/^int count_non_terminals=0, count_terminals=0,count_productions ;$/;"	v
+count_productions	main.c	/^int count_non_terminals=0, count_terminals=0,count_productions ;$/;"	v
+count_terminals	main.c	/^int count_non_terminals=0, count_terminals=0,count_productions ;$/;"	v
+createStack	stack.c	/^struct Stack* createStack(){$/;"	f
+create_parsing_table	main.c	/^void create_parsing_table(){$/;"	f
+find_firsts	main.c	/^void find_firsts(char ch){$/;"	f
+find_follows	main.c	/^void find_follows(char ch){$/;"	f
+get_non_terminal_index	main.c	/^int get_non_terminal_index(char ch){$/;"	f
+get_parse_table_entry	main.c	/^int get_parse_table_entry(char X,char a){$/;"	f
+get_terminal_index	main.c	/^int get_terminal_index(char ch){$/;"	f
+isEmpty	stack.c	/^int isEmpty(struct Stack* stack)$/;"	f
+isFull	stack.c	/^int isFull(struct Stack* stack){$/;"	f
+is_dollar_in_follow	main.c	/^int is_dollar_in_follow(char ch){$/;"	f
+is_epsilon	main.c	/^int is_epsilon(char ch){$/;"	f
+is_first_done	main.c	/^int is_first_done[10], is_follows_done[10];$/;"	v
+is_follows_done	main.c	/^int is_first_done[10], is_follows_done[10];$/;"	v
+is_non_terminal	main.c	/^int is_non_terminal(char ch){$/;"	f
+is_terminal	main.c	/^int is_terminal(char ch){$/;"	f
+main	main.c	/^int main(){$/;"	f
+non_terminals	main.c	/^char non_terminals[10], terminals[10];$/;"	v
+parse	main.c	/^int parse(char* input_string, int size){$/;"	f
+parsing_table	main.c	/^int parsing_table[10][10][10];$/;"	v
+parsting_table_entries_count	main.c	/^int parsting_table_entries_count[10][10];$/;"	v
+peek	stack.c	/^char peek(struct Stack* stack)$/;"	f
+pop	stack.c	/^char pop(struct Stack* stack)$/;"	f
+print_firsts	main.c	/^void print_firsts(){$/;"	f
+print_follows	main.c	/^void print_follows(){$/;"	f
+print_parser_state	main.c	/^void print_parser_state(struct Stack* stack, char* input_string, int input_idx, int production_rule_idx)$/;"	f
+print_parsing_table	main.c	/^void print_parsing_table(){$/;"	f
+print_stack	stack.c	/^void print_stack(struct Stack* stack){$/;"	f
+production	main.c	/^char production[10][100];$/;"	v
+push	stack.c	/^void push(struct Stack* stack, char item)$/;"	f
+read_non_terminals	main.c	/^void read_non_terminals(){$/;"	f
+read_terminals	main.c	/^void read_terminals(){$/;"	f
+set_firsts	main.c	/^char set_firsts[10][100];$/;"	v
+set_follow	main.c	/^char set_follow[10][100];$/;"	v
+terminals	main.c	/^char non_terminals[10], terminals[10];$/;"	v
+top	stack.h	/^    int top;$/;"	m	struct:Stack

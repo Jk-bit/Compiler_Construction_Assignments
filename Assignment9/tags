@@ -1,0 +1,39 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+START_SYMBOl	follow_first.c	/^char START_SYMBOl;$/;"	v
+_FOLLOW_FIRST_H	follow_first.h	2;"	d
+calculate_firsts	follow_first.c	/^void calculate_firsts(){$/;"	f
+calculate_follows	follow_first.c	/^void calculate_follows(){$/;"	f
+contains_epsilon_in_first	follow_first.c	/^int contains_epsilon_in_first(char ch){$/;"	f
+containts	follow_first.c	/^int containts(char *array,char ch, int count){$/;"	f
+count_non_terminals	follow_first.c	/^int count_non_terminals=0, count_terminals=0,count_productions=0;$/;"	v
+count_productions	follow_first.c	/^int count_non_terminals=0, count_terminals=0,count_productions=0;$/;"	v
+count_terminals	follow_first.c	/^int count_non_terminals=0, count_terminals=0,count_productions=0;$/;"	v
+create_parsing_table	follow_first.c	/^void create_parsing_table(){$/;"	f
+find_firsts	follow_first.c	/^void find_firsts(char ch){$/;"	f
+find_follows	follow_first.c	/^void find_follows(char ch){$/;"	f
+get_non_terminal_index	follow_first.c	/^int get_non_terminal_index(char ch){$/;"	f
+get_terminal_index	follow_first.c	/^int get_terminal_index(char ch){$/;"	f
+is_dollar_in_follow	follow_first.c	/^int is_dollar_in_follow(char ch){$/;"	f
+is_epsilon	follow_first.c	/^int is_epsilon(char ch){$/;"	f
+is_first_done	follow_first.c	/^int is_first_done[10], is_follows_done[10];$/;"	v
+is_follows_done	follow_first.c	/^int is_first_done[10], is_follows_done[10];$/;"	v
+is_non_terminal	follow_first.c	/^int is_non_terminal(char ch){$/;"	f
+is_terminal	follow_first.c	/^int is_terminal(char ch){$/;"	f
+main	main.c	/^int main(){$/;"	f
+non_terminals	follow_first.c	/^char non_terminals[10], terminals[10];$/;"	v
+parsing_table	follow_first.c	/^int parsing_table[10][10][10];$/;"	v
+parsting_table_entries_count	follow_first.c	/^int parsting_table_entries_count[10][10];$/;"	v
+print_firsts	follow_first.c	/^void print_firsts(){$/;"	f
+print_follows	follow_first.c	/^void print_follows(){$/;"	f
+print_parsing_table	follow_first.c	/^void print_parsing_table(){$/;"	f
+production	follow_first.c	/^char production[10][100];$/;"	v
+read_non_terminals	follow_first.c	/^void read_non_terminals(){$/;"	f
+read_terminals	follow_first.c	/^void read_terminals(){$/;"	f
+set_firsts	follow_first.c	/^char set_firsts[10][100];$/;"	v
+set_follow	follow_first.c	/^char set_follow[10][100];$/;"	v
+terminals	follow_first.c	/^char non_terminals[10], terminals[10];$/;"	v

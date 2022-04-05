@@ -101,7 +101,7 @@ void string_copy(char *src, int start, int size, char *dest){
 	for(int  i = start, j = 0; i <= size; i++, j++){
 		dest[j] = src[i];
 	}
-	dest[size] = '\0';
+	dest[size+1] = '\0';
 }
 
 bool is_num(char *str){

@@ -17,7 +17,7 @@
 	int sym_index;
 }
 
-%token <dval> FLOAT SIN COS TAN COSINE SEC COT LOG SQRT ASIN ACOS ATAN 
+%token <dval> 		FLOAT SIN COS TAN COSINE SEC COT LOG SQRT ASIN ACOS ATAN 
 %token <sym_index>  NAME
 
 %type <dval> expr
@@ -30,7 +30,7 @@
 				;
 	
 	statement :
-				NAME '=' expr				 	{
+				NAME '=' expr  				 	{
 													sym_table[$1] = $3;
 												}
 				| expr							{
@@ -63,7 +63,7 @@
 				| COS'(' expr ')'			{ $$ = cos($3); }
 				| TAN'(' expr ')'			{ $$ = tan($3); }
 				| SQRT'(' expr ')'			{ $$ = sqrt($3); }
-				| LOG'(' expr ')'			{ $$ = sqrt($3); }
+				| LOG'(' expr ')'			{ $$ = log($3); }
 				| ASIN'(' expr ')'			{ $$ = asin($3); }
 				| ACOS'(' expr ')'			{ $$ = acos($3); }
 				| ATAN'(' expr ')'			{ $$ = atan($3); }

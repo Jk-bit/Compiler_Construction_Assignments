@@ -1,0 +1,29 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+INPUT_SIZE	lexer.h	6;"	d
+INVALID	lexer.h	/^enum tokens {VARIABLE, NUMBER, OPERATOR, WS, INVALID};$/;"	e	enum:tokens
+NUMBER	lexer.h	/^enum tokens {VARIABLE, NUMBER, OPERATOR, WS, INVALID};$/;"	e	enum:tokens
+OPERATOR	lexer.h	/^enum tokens {VARIABLE, NUMBER, OPERATOR, WS, INVALID};$/;"	e	enum:tokens
+VARIABLE	lexer.h	/^enum tokens {VARIABLE, NUMBER, OPERATOR, WS, INVALID};$/;"	e	enum:tokens
+WS	lexer.h	/^enum tokens {VARIABLE, NUMBER, OPERATOR, WS, INVALID};$/;"	e	enum:tokens
+handle_invalid	lexer.c	/^void handle_invalid(char *str){$/;"	f
+index_lex	lexer.c	/^int index_lex = 0;$/;"	v
+is_cap_alpha	lexer.c	/^bool is_cap_alpha(char ch){$/;"	f
+is_digit	lexer.c	/^bool is_digit( char ch ){$/;"	f
+is_lower_alpha	lexer.c	/^bool is_lower_alpha(char ch){$/;"	f
+is_num	lexer.c	/^bool is_num(char *str){$/;"	f
+is_operator	lexer.c	/^bool is_operator(char *str){$/;"	f
+is_var	lexer.c	/^bool is_var(char *str){$/;"	f
+is_ws	lexer.c	/^bool is_ws( char *str ){$/;"	f
+lexer	lexer.c	/^void lexer(char *str){$/;"	f
+main	main.c	/^int main(){$/;"	f
+operator_list	lexer.c	/^char operator_list[] = {'+', '-', '=', '*', '\/'};$/;"	v
+return_token	lexer.c	/^int return_token(char *str){$/;"	f
+string_copy	lexer.c	/^void string_copy(char *src, int start, int size, char *dest){$/;"	f
+tokens	lexer.h	/^enum tokens {VARIABLE, NUMBER, OPERATOR, WS, INVALID};$/;"	g
+yylen	lexer.c	/^int yylen;$/;"	v
+yytext	lexer.c	/^char *yytext;$/;"	v

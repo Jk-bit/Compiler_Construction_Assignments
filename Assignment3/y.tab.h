@@ -50,12 +50,15 @@ extern int yydebug;
     SIN = 260,
     COS = 261,
     TAN = 262,
-    LOG = 263,
-    SQRT = 264,
-    ASIN = 265,
-    ACOS = 266,
-    ATAN = 267,
-    NAME = 268
+    COSINE = 263,
+    SEC = 264,
+    COT = 265,
+    LOG = 266,
+    SQRT = 267,
+    ASIN = 268,
+    ACOS = 269,
+    ATAN = 270,
+    NAME = 271
   };
 #endif
 /* Tokens.  */
@@ -64,12 +67,15 @@ extern int yydebug;
 #define SIN 260
 #define COS 261
 #define TAN 262
-#define LOG 263
-#define SQRT 264
-#define ASIN 265
-#define ACOS 266
-#define ATAN 267
-#define NAME 268
+#define COSINE 263
+#define SEC 264
+#define COT 265
+#define LOG 266
+#define SQRT 267
+#define ASIN 268
+#define ACOS 269
+#define ATAN 270
+#define NAME 271
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
@@ -81,7 +87,7 @@ union YYSTYPE
 	double dval;
 	int sym_index;
 
-#line 85 "y.tab.h" /* yacc.c:1909  */
+#line 91 "y.tab.h" /* yacc.c:1909  */
 };
 
 typedef union YYSTYPE YYSTYPE;
